@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width" />
 
     <title>Mara Schwartz</title>
-    <!-- <link rel="stylesheet" href="index.css" /> -->
-    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="index.js"></script>
 </head>
 
 <body>
-    <!-- <header id="navbar">
+    <header id="navbar">
         <a class="nav-title arial" href="#about">Mara Schwartz</a>
-        <div class="nav-links center">
+        <div class="nav-button">
+            <div class="toggle">☰</div>
+        </div>
+        <ul class="nav-links arial">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- <div class="nav-links center">
             <a class="nav-link arial" href="#about">About</a> 
             <a class="nav-link arial" href="#projects">Projects</a>
             <a class="nav-link arial" href="#contact">Contact</a>
-        </div>
-    </header> -->
+        </div> -->
+    </header>
 
    
-    <header>
+    <!-- <header>
       <nav>
         <div class="logo">
           Mara Schwartz
@@ -39,9 +47,9 @@
           <li><a href="#">About us</a></li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
-    <!-- <div class="grid-center">   
+    <div class="grid-center">   
         <section id="about">
             <div>
                 <div class="profile-frame center">
@@ -57,13 +65,20 @@
         </section>
         <section id="projects">
             <h1 class="arial">Projects</h1>
-            <div class="margin">
-                <div class="container center">
-                    <div><img src="images/mp.png"></div>
-                    <div><img src="images/b.png"></div>
-                    <div><img src="images/c.png"></div>
-                </div>
-            </div> 
+            <div class="mt-4 work-gallery-row center wrap">
+                <div class="margin">
+                    <div class="masonry">
+                        <div class="grid"><img src="images/b.png"></div>
+                        <div class="grid"><img src="images/b.png"></div>
+                        <div class="grid"><img src="images/b.png"></div>
+                        <div class="grid"><img src="images/b.png"></div>
+                        <div class="grid"><img src="images/b.png"></div>
+                        <div class="grid"><img src="images/b.png"></div>
+                        <div class="grid"><img src="images/b.png"></div>
+                        <div class="grid"><img src="images/b.png"></div>
+                    </div>
+                </div> 
+            </div>
         </section>
         <section id="contact">
             <div class="center">
@@ -82,6 +97,6 @@
     </div>
     <footer class="arial center">
         <h4>Follow me on linkedin</h4>
-    </footer> -->
+    </footer>
 </body>
 </html> 
