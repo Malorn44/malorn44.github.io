@@ -21,20 +21,12 @@
     font-family: arial, tahoma; */
     padding: 0;
     margin: 0;
-    list-style: none;
     /*    outline: 1px solid brown;*/
   }
   
   /*   End global   */
   
-  
 
-/* header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
-} */
 
 #navbar {
   /* height: 150px; */
@@ -70,6 +62,7 @@
 
   .nav-links {
     float: right;
+    list-style: none;
   }
   .nav-links li {
     float: left;
@@ -147,24 +140,6 @@
   color: var(--secondary);
 }
 
-/* .nav-links {
-  float: right;
-  position:absolute;
-  vertical-align: center;
-  right:0px;
-  height: 100%;
-}*/
-
-
-/* .nav-link {
-  float: left;
-  font-weight: bold;
-  color: var(--primary);
-}
-
-.nav-link:hover {
-  color: var(--secondary);
-} */
 .sticky {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
