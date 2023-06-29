@@ -169,6 +169,12 @@ footer {
     column-gap: 30px;
     row-gap: 10px;
 }
+/* 
+@media (max-width: 1440px) {
+    .masonry {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} */
 
 @media (max-width: 1440px) {
     .masonry {
@@ -176,21 +182,21 @@ footer {
     }
 }
 
-@media (max-width: 1200px) {
-    .masonry {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 992px) {
+@media (max-width: 1060px) {
     .masonry {
         grid-template-columns: repeat(2, 1fr);
     }
+    .grid {
+        max-width: 500px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 740px) {
     .masonry {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .grid {
+        max-width: 500px;
     }
 }
 
