@@ -99,6 +99,14 @@ footer {
     justify-content: center;
     align-items: center;
 }
+@media (max-height: 600px) {
+    .intro {
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 .profile-frame {
     display: flex;
@@ -107,8 +115,10 @@ footer {
 }
 
 .profile-frame img {
+    max-height: 40vh;
+    max-width: 80vw;
     height: 50%;
-    width: 50%;
+    width: auto;
     border-radius: 50%;
 }
 
