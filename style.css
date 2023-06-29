@@ -134,7 +134,7 @@ footer {
     position: absolute;
     left: 50%;
     right: 50%;
-    bottom: 15px;
+    top: calc(100vh - 71px);
     z-index: 0;
 }
 
