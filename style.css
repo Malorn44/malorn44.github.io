@@ -7,9 +7,11 @@
     --primary: hsl(213, 77%, 50%);
     --secondary: hsl(257, 86%, 74%);
     --accent: hsl(276, 87%, 61%);
-    --secondary20:hsl(257, 86%, 74%, 20%);
-    --secondary80:hsl(257, 86%, 74%, 80%);
-    --secondary90:hsl(257, 86%, 74%, 90%);
+    --secondary20: hsl(257, 86%, 74%, 20%);
+    --secondary80: hsl(257, 86%, 74%, 80%);
+    --secondary90: hsl(257, 86%, 74%, 90%);
+    --accent80: hsl(276, 87%, 61%, 80%);
+    --accent90: hsl(276, 87%, 61%, 90%);
 }
 
 html {
@@ -156,6 +158,17 @@ footer {
     object-fit: cover;
 }
 
+.project-bkg {
+    background-color: var(--secondary20);
+    /* gap: 2em;
+    border-radius: 10px; */
+    color: var(--text);
+    /* margin: 0px 20px 10px 20px;
+    padding: 20px; */
+    /* max-width: 1880px; */
+    /* width:100%; */
+}
+
 /* Masonry Grid outer */
 
 
@@ -163,9 +176,9 @@ footer {
     vertical-align: middle;
 } */
 
-  .mt-4 {
+  /* .mt-4 {
     margin-top: 1.5rem !important;
-  }
+  } */
 /*
   @media (min-width: 768px) {
   .mt-md-5 {
@@ -174,8 +187,11 @@ footer {
 } */
 
 .work-gallery-row {
-    padding: 0px 20px 0px 20px;
-    max-width: 1920px;
+    padding: 20px 20px 0px 20px;
+    margin: 20px;
+    max-width: 1880px;
+    background-color: var(--secondary20);
+    border-radius: 10px;
   }
 
 /* Masonry Grid */
@@ -282,8 +298,8 @@ footer {
 }
 
 .masonry .grid__tag {
-    background-color: var(--secondary90);
-    color: var(--text);
+    background-color: var(--accent80);
+    color: #fff;
     border-radius: 5px;
     padding: 4px 10px;
     margin-bottom: 5px;
@@ -417,7 +433,7 @@ footer {
     border-radius: 10px;
     background-color: var(--secondary20);
     color: var(--text);
-    margin: 0px 20px 10px 20px;
+    margin: 20px 20px 10px 20px;
     padding: 20px;
     max-width: 1880px;
     font-size: 1.5rem;
