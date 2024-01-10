@@ -87,9 +87,9 @@
   .hamburger {
     float: right;
     margin: 9px;
-    color: #000000;
+    color: var(--primary);
     font-size: 30px;
-    border: 1px solid #000000;
+    border: 1px solid var(--primary);
     padding: 0px 5px;
     border-radius: 4px;
     cursor: pointer;

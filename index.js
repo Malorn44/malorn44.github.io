@@ -19,7 +19,9 @@ $(document).on("scroll", function(){
 $(document).on('click','.toggle',function(e) {
     //handler code here
     "use strict";
-    $('header ul').slideToggle();
+    if ($(window).width() <= 500) {
+        $('header ul').slideToggle();
+    }
   });
 
 $(window).resize(function () {
