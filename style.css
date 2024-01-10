@@ -2,14 +2,14 @@
 
 
 :root {
-    --t1: #000000;
-    --t2: #ffffff;
-    --bk1: #fdf6ed;
-    --bk2: #f0eae1;
-    --bk3: #efe8e0;
-    --primary: #1d76e2;
-    --secondary: #f5b2f2;
-    --accent: #bca5f3;
+    --text: hsl(216, 85%, 8%);
+    --background: hsl(212, 87%, 97%);
+    --primary: hsl(213, 77%, 50%);
+    --secondary: hsl(257, 86%, 74%);
+    --accent: hsl(276, 87%, 61%);
+    --secondary20:hsl(257, 86%, 74%, 20%);
+    --secondary80:hsl(257, 86%, 74%, 80%);
+    --secondary90:hsl(257, 86%, 74%, 90%);
 }
 
 html {
@@ -22,6 +22,7 @@ html {
 
 body {
     margin: 0;
+    background-color: var(--background);
 }
 
 .margin {
@@ -73,22 +74,22 @@ h1 {
 
 section {
     scroll-margin-top: 3.5em;
+    background-color: var(--background);
 }
 
 section > h1 {
     text-align: center;
 }
 
-section:nth-child(even) {
-    background-color: var(--bk1);
-}
+/* section:nth-child(even) {
+} */
 
 
 /* Footer */
 
 footer {
     background-color: var(--accent);
-    color: var(--t2);
+    color: var(--text);
     height: 40px;
 }
 
@@ -174,6 +175,7 @@ footer {
 
 .work-gallery-row {
     padding: 0px 20px 0px 20px;
+    max-width: 1920px;
   }
 
 /* Masonry Grid */
@@ -280,8 +282,8 @@ footer {
 }
 
 .masonry .grid__tag {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #333;
+    background-color: var(--secondary90);
+    color: var(--text);
     border-radius: 5px;
     padding: 4px 10px;
     margin-bottom: 5px;
@@ -356,7 +358,7 @@ footer {
 }
 
 .tools li {
-    background-color: #1d76e2;
+    background-color:var(--primary);
     color:#FFFFFF;
     border-radius: 3px;
     padding: 5px 0px 5px 0px;
@@ -368,7 +370,7 @@ footer {
     display: inline;
     text-decoration: none;
     padding: 5px;
-    color:var(--t2);
+    color:var(--background);
 }
 
 .project-description {
@@ -401,9 +403,39 @@ footer {
 }
 
 .pdf-viewer {
+    display: flex;
     height: 500px;
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    border-radius: 10px;
+    background-color: var(--secondary20);
+    color: var(--text);
+    margin: 0px 20px 10px 20px;
+    padding: 20px;
+    max-width: 1880px;
+    font-size: 1.5rem;
+    width:100%;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    width: 100%;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 50%
+}

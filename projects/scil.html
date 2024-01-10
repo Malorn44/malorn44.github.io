@@ -46,7 +46,35 @@
                     </div>
                     <div class="project-description">
                         <p>
-                            This was the culminating work of my Master's degree.
+                            SCIL was the first major project I worked on as part of
+                            the <a href="https://lacailab.cogsci.rpi.edu/">LACAI Lab</a>. The goal of SCIL was to
+                            identify social roles of individuals within dialogues (such as Leader, Influencer) by
+                            analyzing the language used by those individuals (the frequency of certain words, how
+                            many words a speaker introduced into the conversation, how speakers influenced the
+                            topics of conversation, etc...). SCIL was initially an IARPA project in the late 2000s
+                            and early 2010s. Since then, a lot of advancement had been made in Natural Language
+                            Processing and Computational Sociolinguistics. The project was initially implemented in
+                            Java, so my task was to re-implement SCIL in python as that had become the main language
+                            for NLP research.
+                        </p>
+                        <p>
+                            I chose to re-implement SCIL as a python package to increase the ease of use and to
+                            increase the modularity of the toolkit. My main goals were to create an implementation
+                            that provided results that were at least as good as the original while also vastly
+                            increasing the speed of the program and increasing its functionality. I was able to
+                            achieve these goals, adding several new metrics it can calculate, vastly increasing
+                            the speed of the toolkit (metrics that took minutes to compute now took seconds), and
+                            achieving performance that was as good as the original implementation (on shared metrics).
+                            A description of these metrics can be found in the PyPI and Github pages linked below.
+                        </p>
+                        <p>
+                            In addition to the toolkit, I also worked on an auto-tagger model for identifying metaTags
+                            of turns in dialogues with a fellow lab member. We achieved moderate success, creating a model
+                            that did produce the correct metaTags significantly better than random and was sufficient enough,
+                            in most cases, to produce accurate results with SCIL. As a note, metaTags were required by some metrics
+                            but were rarely the only determining component of those metrics, so even if the tags weren't fully
+                            accurate, the metric wasn't necessarily that innacurate. The main hinderence to the development
+                            of this model was a lack of ground-truth training data. Links to the tagger can also be found below.
                         </p>
                     </div>
                     <div class="center">
@@ -54,14 +82,17 @@
                     </div>
                     <div class="project-links">
                         <ul>
+                            <li><a href="https://pypi.org/project/pySCIL/0.0.11/">pySCIL Python Package</a></li>
+                            <li><a href="https://pypi.org/project/pySCILTagger/0.0.3/">pySCILTagger Python Package</a></li>
+                            <li><a href="https://github.com/Malorn44/pySCIL">Github: pySCIL</a></li>
+                            <li><a href="https://github.com/Malorn44/pySCIL-web">Github: pySCIL Web Interface</a></li>
+                            <li><a href="https://github.com/Malorn44/pySCIL-tagger">Github: pySCIL Tagger</a></li>
+                            <li><a href="https://github.com/Malorn44/pySCIL-MetaTaggerTest">Github: pySCIL Tagger Test</a></li>
                             <li><a href="https://www.iarpa.gov/research-programs/scil">IARPA Project Page</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <footer class="arial center">
-                <h4>Follow me on linkedin</h4>
-            </footer>
         </div>
     </div>
 </body>

@@ -1,10 +1,7 @@
 :root {
-    --t1: #000000;
-    --t2: #ffffff;
-    --bk1: #fdf6ed;
-    --bk2: #f0eae1;
-    --bk3: #efe8e0;
-    --primary: #1d76e2;
-    --secondary: #f5b2f2;
-    --accent: #bca5f3;
+    --text: hsl(216, 85%, 8%);
+    --background: hsl(212, 87%, 97%);
+    --primary: hsl(213, 77%, 50%);
+    --secondary: hsl(257, 86%, 74%);
+    --accent: hsl(276, 87%, 61%);
 }

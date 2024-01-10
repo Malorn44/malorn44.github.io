@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Mara Schwartz</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../header.css" />
+    <script src="../jquery-3.7.0.min.js"></script>
+    <script src="../index.js"></script>
+</head>
+
+<body>
+    <header id="navbar">
+        <a class="nav-title arial" href="../index.html">Mara Schwartz</a>
+        <div class="nav-button">
+            <div class="toggle">☰</div>
+        </div>
+        <ul class="nav-links arial">
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content-wrapper">
+        <div class="flex-wrapper">
+            <div>
+                <div class="arial grid-center">
+                    <div class="center">
+                        <h1>Programming Languages Assignment #2 (Fall 2021)</h1>
+                    </div>
+                    <div class="tools center ">
+                        <ul>
+                            <li><a href="https://www.erlang.org/">Erlang</a></li>
+                            <li><a href="https://www.gnu.org/software/bash/">Bash</a></li>
+                        </ul>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            This was a programming assignment I created as a Graduate Teaching Assistant for 
+                            Programming Language in Fall 2021 at Rensselaer Polytechnic Institute. The assignment
+                            was inspired by the BitTorrent protocol for peer-to-peer file sharing. It was greatly
+                            simplified as a lot of students potentially did not have a lot of exposure to distributed
+                            computing and because it was in a language that was new to most students (either Erlang or SALSA).
+                            I came up with this programming assignment with one other TA who wrote up starter code and an
+                            auto-grader for SALSA while I wrote starter code and an auto-grader for Erlang (students had the
+                            option to complete the assignment in either Erlang or SALSA). I was also new to Erlang at the
+                            start of the course so it was an interesting challenge to learn this new language plus the
+                            <a href="https://en.wikipedia.org/wiki/Actor_model">actor model</a> and create an interesting
+                            programming assignment.
+                        </p>
+                        <p>
+                            The assignment tasks students to create code for a directory service and file servers. The
+                            directory service keeps track of the fiels located in file servers. Clients interact with the
+                            directory service to upload files, which the directory service breaks into chunks and distributes
+                            them among the connected file servers. Clients can also request files from the directory service.
+                            The connected file servers act as peers for the client and send chunks to the client which reconstructs
+                            the full file. More information is given in the pdf linked below.
+                        </p>
+                        <p>
+                            As this was created for a class, only the starter code and assignment pdf are hosted here.
+                            My implementation of the assignment is not included.
+                        </p>
+                    </div>
+                    <div class="center">
+                        <h1>Links</h1>
+                    </div>
+                    <div class="project-links">
+                        <ul>
+                            <li><a href="files/pa2.pdf">Project PDF</a></li>
+                            <li><a href="files/provided_erlang.zip">Provided Code</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -51,7 +51,51 @@
                     </div>
                     <div class="project-description">
                         <p>
-                            This was the culminating work of my Master's degree.
+                            This project was the culminating work of my Master's degree. This work was influenced by the
+                            <a href="https://lacailab.cogsci.rpi.edu/index.php/projects/radii/">RADII (Reticular 
+                            Analysis of Discourse for Influence Indicators)</a> project which was active in my 
+                            lab at the time.  
+                        </p>
+                        <p>
+                            It involved creating artificial dialogues from clusters on a 2017 French election twitter dataset.
+                            To create the clusters, I used the Leiden clustering algorithm after comparing it to several other
+                            clustering algorithms. I then performed topical analysis using the SCIL toolset, which I created
+                            previously, to identify meso-topics (the most prevalent topics in a dialogue). I also analyzed
+                            hashtags that were used in tweets to give further insight into what each cluster was about.
+                        </p>
+                        <p>
+                            The dataset:
+                        </p>
+                        <p>
+                        <!-- Dataset information -->
+                        <table style="border-collapse:collapse;border-spacing:0" class="tg"><thead><tr><th style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal" colspan="3">#Tweets</th><th style="border-color:#000000;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal">#Users</th></tr></thead><tbody><tr><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal" colspan="3">674309</td><td style="background-color:#ffffff;border-color:#000000;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal" rowspan="3">59144<br></td></tr><tr><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal">#Retweets</td><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal">#Replies</td><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal">#Tweets</td></tr><tr><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal">504526</td><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal">116676</td><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal">53107</td></tr></tbody></table>
+                        </p>
+                        <p>
+                            Retweets were used to create a digraph of twitter users. User A had an edge to user B if A retweeted B.
+                            The weight of the edge was the number of times that A retweeted B. Some users were located outside of
+                            the dataset (meaning minimal information was available on the tweet). This was done consciously since all
+                            of the tweets used from the dataset were retweets, the tweet content of each user was known. This included
+                            the content of tweets outside of the dataset. 
+                        </p>
+                        <p>
+                            The graph:
+                        </p>
+                        <p>
+                        <!-- Graph information -->
+                        <table style="border-collapse:collapse;border-spacing:0" class="tg"><thead><tr><th style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal" colspan="2">#Nodes</th><th style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal" colspan="2">#Edges</th></tr></thead><tbody><tr><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal" rowspan="2">65517</td><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal">Overlap With Dataset</td><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal" rowspan="2">222231</td><td style="background-color:#ffffff;border-color:#000000;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal">Weighted</td></tr><tr><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:middle;word-break:normal">46683</td><td style="background-color:#ffffff;border-color:#000000;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">504526</td></tr></tbody></table>
+                        </p>
+                        <p>
+                            The idea behind this project was that people would be more likely to retweet people who share
+                            their opinions. Using the graph structure created by the retweets, we can cluster users to understand
+                            more about how influence is used and propagated through social networks. 
+                        </p>
+                        <p>
+                            As many tweets were in French, tweets translated using Helsinki-NLP opus-mt-fr-en model with
+                            Hugging Face transformers. The work was presented at the Fall 2022 Master's Project postering
+                            session at Rensselaer Polytechnic Institute in front of fellow graduate students and professors.
+                            The visualization in the poster (linked below) was made using the ForceAtlas 2 algorithm within
+                            Gephi on a subset of the data (nodes with weighted degree of at least 50 belonging to the 10 largest
+                            clusters found using the Leiden clustering algorithm).
                         </p>
                     </div>
                     <div class="center">
@@ -60,13 +104,13 @@
                     <div class="project-links">
                         <ul>
                             <li><a href="files/Master Project Poster.pdf">Project Poster</a></li>
+                            <li>Github (will be linked here later. the project contains some raw data that I do not have
+                                permission to publish and needs to be cleaned up to put on my public github)
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <footer class="arial center">
-                <h4>Follow me on linkedin</h4>
-            </footer>
         </div>
     </div>
 </body>
