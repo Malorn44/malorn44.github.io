@@ -79,9 +79,11 @@ section {
     background-color: var(--background);
 }
 
-section > h1 {
+h1 {
     text-align: center;
 }
+
+
 
 /* section:nth-child(even) {
 } */

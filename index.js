@@ -19,15 +19,16 @@ $(document).on("scroll", function(){
 // is the hamburger menu closed?
 var isClosed = true;
 
-function toggleMenu(x) {
+$(document).on('click','.toggle',function(e) {
+    console.log('toggle')
     if ($(window).width() <= 500) {
         // toggle menu
         $('header ul').slideToggle();
         // toggle hamburger icon
-        x.classList.toggle('change');
+        $('header .hamburger').toggleClass('change');
         isClosed = !isClosed;
     }
-} 
+});
 
 // if resized such that hamburger menu should not be shown
 // remove hamburger menu
