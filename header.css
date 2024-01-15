@@ -67,7 +67,8 @@
     /* padding: 13px 13px; */
     font-size: 18px;
     border-radius: 3px;
-    transition: all .7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
   }
   .nav-links li a {
     color: var(--primary);
@@ -86,14 +87,43 @@
   }
   .hamburger {
     float: right;
-    margin: 9px;
+    margin: 10px;
     color: var(--primary);
-    font-size: 30px;
-    border: 1px solid var(--primary);
+    font-size: 28px;
     padding: 0px 5px;
-    border-radius: 4px;
     cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
   }
+
+  .hamburger:hover .bar{
+    background-color: var(--accent);
+  }
+
+    .bar {
+      background-color: var(--primary);
+    }
+
+    .bar1, .bar2, .bar3 {
+      width: 30px;
+      height: 4px;
+      border-radius: 4px;
+      margin: 6px 0;
+      transition: 0.4s;
+      -webkit-transition: 0.4s;
+    }
+    .change .bar1 {
+    /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
+    transform: rotate(-45deg) translate(-6px, 8px);
+    }
+    .change .bar2 {opacity: 0;}
+    .change .bar3 {
+    -webkit-transform: rotate(45deg); 
+    /* translate(-8px, -8px); */
+    transform: rotate(45deg) translate(-6px, -8px);
+    }
+    
   
   /*   End nav bar for small screens   */
   

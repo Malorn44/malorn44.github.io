@@ -16,18 +16,27 @@ $(document).on("scroll", function(){
 });
 
 
-$(document).on('click','.toggle',function(e) {
-    //handler code here
-    "use strict";
-    if ($(window).width() <= 500) {
-        $('header ul').slideToggle();
-    }
-  });
+// is the hamburger menu closed?
+var isClosed = true;
 
+function toggleMenu(x) {
+    if ($(window).width() <= 500) {
+        // toggle menu
+        $('header ul').slideToggle();
+        // toggle hamburger icon
+        x.classList.toggle('change');
+        isClosed = !isClosed;
+    }
+} 
+
+// if resized such that hamburger menu should not be shown
+// remove hamburger menu
 $(window).resize(function () {
-    "use strict";
     if ($(window).width() > 500) {
         $('header ul').removeAttr('style');
-        // $('header ul').slideToggle();
+        if (!isClosed) {
+            $('header .hamburger').removeClass('change');   
+            isClosed = true;
+        }
     }
 });
