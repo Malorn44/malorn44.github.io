@@ -12,6 +12,21 @@
     --secondary90: hsl(257, 86%, 74%, 90%);
     --accent80: hsl(276, 87%, 61%, 80%);
     --accent90: hsl(276, 87%, 61%, 90%);
+
+    --social-icon: hsl(212, 87%, 97%);
+}
+
+.dark-theme {
+    --text: hsl(216, 85%, 92%);
+    --background: hsl(212, 87%, 3%);
+    --primary: hsl(213, 77%, 50%);
+    --secondary: hsl(257, 86%, 26%);
+    --accent: hsl(276, 87%, 39%);
+    --secondary20: hsl(257, 86%, 26%, 20%);
+    --secondary80: hsl(257, 86%, 26%, 80%);
+    --secondary90: hsl(257, 86%, 26%, 90%);
+    --accent80: hsl(276, 87%, 39%, 80%);
+    --accent90: hsl(276, 87%, 39%, 90%);
 }
 
 html {
@@ -83,11 +98,38 @@ h1 {
     text-align: center;
 }
 
+/* Dark Mode Toggle */
+.theme-toggle {
+    position: fixed; /* Fix the position of the button */
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer; /* Change the cursor to a pointer */
+    
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background-color: var(--background);
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.theme-toggle:hover {
+    color: var(--background);
+    border-color: var(--background);
+    background-color: var(--primary);
+}
 
 
-/* section:nth-child(even) {
-} */
-
+.theme-toggle span {
+    font-size: 1.5rem;
+}
 
 /* Footer */
 
@@ -98,8 +140,8 @@ footer {
 }
 
 footer .social-icons a {
-    border: 2px solid var(--background);
-    color: var(--background);
+    border: 2px solid var(--social-icon);
+    color: var(--social-icon);
     border-radius: 100%;
     height: 40px;
     width: 40px;
@@ -116,7 +158,7 @@ footer .social-icons a {
 
 footer .social-icons a:hover {
     color: var(--secondary);
-    background-color: var(--background);
+    background-color: var(--social-icon);
 }
 
 footer .social-icons span {
@@ -159,6 +201,7 @@ footer .social-icons span {
 }
 
 .about-text {
+    color: var(--text);
     text-align: center;
     padding: 15px;
     max-width: 500px;
