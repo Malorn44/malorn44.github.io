@@ -7,6 +7,7 @@
     --primary: hsl(213, 77%, 50%);
     --secondary: hsl(257, 86%, 74%);
     --accent: hsl(276, 87%, 61%);
+    --text10: hsl(216, 85%, 8%, 10%);
     --secondary20: hsl(257, 86%, 74%, 20%);
     --secondary80: hsl(257, 86%, 74%, 80%);
     --secondary90: hsl(257, 86%, 74%, 90%);
@@ -22,6 +23,7 @@
     --primary: hsl(213, 77%, 50%);
     --secondary: hsl(257, 86%, 26%);
     --accent: hsl(276, 87%, 39%);
+    --text10: hsl(216, 85%, 92%, 10%);
     --secondary20: hsl(257, 86%, 26%, 20%);
     --secondary80: hsl(257, 86%, 26%, 80%);
     --secondary90: hsl(257, 86%, 26%, 90%);
@@ -213,9 +215,21 @@ footer .social-icons span {
     position: absolute;
     left: 50%;
     right: 50%;
-    bottom: 15px;
+    bottom: 20px;
     z-index: 0;
 }
+
+.down-arrow a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 2rem;
+    padding:5px;
+}
+
+/* .fa-bounce:not(:hover) {
+    animation: none;
+} */
+
 
 /* Projects */
 
