@@ -14,7 +14,7 @@
 
 <body>
     <header id="navbar">
-        <a class="nav-title arial" href="#about">Mara Schwartz</a>
+        <a class="nav-title" href="#about">Mara Schwartz</a>
         <div class="nav-button">
             <div class="hamburger toggle">
                 <div class="bar bar1"></div>
@@ -22,9 +22,10 @@
                 <div class="bar bar3"></div>
             </div>
         </div>
-        <ul class="nav-links arial">
+        <ul class="nav-links">
             <li><a class="toggle" href="#about">About</a></li>
             <li><a class="toggle" href="#projects">Projects</a></li>
+            <li><a class="toggle" href="#publications">Publications</a></li>
             <li><a class="toggle" href="Mara_Schwartz_Resume.pdf" target="_blank">Resume</a></li>
         </ul>
     </header>
@@ -34,94 +35,114 @@
                 <div class="profile-frame center">
                     <img src="images/profile.png", alt="Picture of Mara Schwartz">
                 </div>
-                <div class="about-text arial">
+                <div class="about-text">
                     <h4> Hi, my name is Mara Schwartz. I am looking for work in Software Engineering and Natural Language Processing. I have a M.S. in Computer Science and a B.S. in Computer Science and Cognitive Science from Rensselaer Polytechnic Institute. </h4>
+                    
+                    <div class="bio-links">
+                        <a class="bio-link fa-solid fa-arrow-down" href="Mara_Schwartz_Resume.pdf" target="_blank"> 
+                            <span class="bio-link ffamily">Resume</span>
+                        </a>
+                        <a class="bio-link fa-solid fa-arrow-up-right-from-square" href="http://doi.org/10.54941/ahfe1003276" target="_blank">
+                            <span class="bio-link ffamily">Publication</span>
+                        </a>
+                    </div>
                 </div>
+
             </div>
             <div class="down-arrow center">
                 <a href="#projects"> <img src="images/arrow_down.svg", alt="Scroll down for more"> </a>
             </div>
         </section>
         <section id="projects">
-            <h1 class="arial">Projects</h1>
+            <h1>Projects</h1>
             <div class="center">
-                <div class="mt-4 work-gallery-row center wrap">
-                    <div class="margin">
-                        <div class="masonry arial">
-                            <div class="grid">
-                                <img src="images/graph.png">
-                                <div class="grid__body">
-                                    <a class="grid__link" href="projects/tatuc.html"></a>
-                                    <div class="mt-auto mr-auto">
-                                        <div class="grid__tag">Topical Analysis of Twitter User Clusters</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <img src="images/scil.png">
-                                <div class="grid__body">
-                                    <a class="grid__link" href="projects/scil.html"></a>
-                                    <div class="mt-auto mr-auto">
-                                        <div class="grid__tag">SCIL</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <img src="images/GATOR.png">
-                                <div class="grid__body">
-                                    <a class="grid__link" href="projects/gator.html"></a>
-                                    <div class="mt-auto mr-auto">
-                                        <div class="grid__tag">GATOR</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <img src="images/yacs.png">
-                                <div class="grid__body">
-                                    <a class="grid__link" href="projects/yacs.html"></a>
-                                    <div class="mt-auto mr-auto">
-                                        <div class="grid__tag">YACS</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <img src="images/belex.png">
-                                <div class="grid__body">
-                                    <a class="grid__link" href="projects/belex.html"></a>
-                                    <div class="mt-auto mr-auto">
-                                        <div class="grid__tag">BelEx Annotator</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <img src="images/stellaris.png">
-                                <div class="grid__body">
-                                    <a class="grid__link" href="projects/stellaris.html"></a>
-                                    <div class="mt-auto mr-auto">
-                                        <div class="grid__tag">Stellaris Save Game Visualizer</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <img src="images/nurikabe.png">
-                                <div class="grid__body">
-                                    <a class="grid__link" href="projects/nurikabe.html"></a>
-                                    <div class="mt-auto mr-auto">
-                                        <div class="grid__tag">Nurikabe Maker</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <img src="images/proglang.png">
-                                <div class="grid__body">
-                                    <a class="grid__link" href="projects/proglang.html"></a>
-                                    <div class="mt-auto mr-auto">
-                                        <div class="grid__tag">Programming Languages Assignment #2</div>
-                                    </div>
+                <div class="mt-4 center wrap container">
+                    <div class="masonry">
+                        <div class="grid">
+                            <img src="images/graph.png">
+                            <div class="grid__body">
+                                <a class="grid__link" href="projects/tatuc.html"></a>
+                                <div class="mt-auto mr-auto">
+                                    <div class="grid__tag">Topical Analysis of Twitter User Clusters</div>
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                        <div class="grid">
+                            <img src="images/scil.png">
+                            <div class="grid__body">
+                                <a class="grid__link" href="projects/scil.html"></a>
+                                <div class="mt-auto mr-auto">
+                                    <div class="grid__tag">SCIL</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <img src="images/GATOR.png">
+                            <div class="grid__body">
+                                <a class="grid__link" href="projects/gator.html"></a>
+                                <div class="mt-auto mr-auto">
+                                    <div class="grid__tag">GATOR</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <img src="images/yacs.png">
+                            <div class="grid__body">
+                                <a class="grid__link" href="projects/yacs.html"></a>
+                                <div class="mt-auto mr-auto">
+                                    <div class="grid__tag">YACS</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <img src="images/belex.png">
+                            <div class="grid__body">
+                                <a class="grid__link" href="projects/belex.html"></a>
+                                <div class="mt-auto mr-auto">
+                                    <div class="grid__tag">BelEx Annotator</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <img src="images/stellaris.png">
+                            <div class="grid__body">
+                                <a class="grid__link" href="projects/stellaris.html"></a>
+                                <div class="mt-auto mr-auto">
+                                    <div class="grid__tag">Stellaris Save Game Visualizer</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <img src="images/nurikabe.png">
+                            <div class="grid__body">
+                                <a class="grid__link" href="projects/nurikabe.html"></a>
+                                <div class="mt-auto mr-auto">
+                                    <div class="grid__tag">Nurikabe Maker</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <img src="images/proglang.png">
+                            <div class="grid__body">
+                                <a class="grid__link" href="projects/proglang.html"></a>
+                                <div class="mt-auto mr-auto">
+                                    <div class="grid__tag">Programming Languages Assignment #2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="publications">
+            <h1>Publications</h1>
+            <div class="center">
+                <div class="publications container">
+                    <a class="pub-link" href="http://doi.org/10.54941/ahfe1003276" target="_blank">
+                        <div class="publication">
+                            Sanders, A., Schwartz, M., Chang, A., Briggs, S., Braasch, J., Wang, D., Si, M., Strzalkowski, T.  (2023). Towards a Proper Evaluation of Automated Conversational Systems. In: Tareq Ahram, Jay Kalra and Waldemar Karwowski (eds) Artificial Intelligence and Social Computing. AHFE (2023) International Conference. AHFE Open Access, vol 72. AHFE International, USA. http://doi.org/10.54941/ahfe1003276
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>

@@ -21,7 +21,7 @@ var isClosed = true;
 
 $(document).on('click','.toggle',function(e) {
     console.log('toggle')
-    if ($(window).width() <= 500) {
+    if ($(window).width() <= 700) {
         // toggle menu
         $('header ul').slideToggle();
         // toggle hamburger icon
@@ -33,7 +33,7 @@ $(document).on('click','.toggle',function(e) {
 // if resized such that hamburger menu should not be shown
 // remove hamburger menu
 $(window).resize(function () {
-    if ($(window).width() > 500) {
+    if ($(window).width() > 700) {
         $('header ul').removeAttr('style');
         if (!isClosed) {
             $('header .hamburger').removeClass('change');   
