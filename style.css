@@ -200,8 +200,21 @@ footer .social-icons span {
     position: absolute;
     left: 50%;
     right: 50%;
-    bottom: 15px;
+    bottom: 20px;
     z-index: 0;
+}
+
+.down-arrow a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 2rem;
+    padding:5px;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.down-arrow a:hover {
+    color: var(--accent);
 }
 
 /* Projects */
@@ -369,30 +382,6 @@ footer .social-icons span {
     }
 }
 
-/* Publications */
-
-.publication {
-    background-color: var(--secondary40);
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-    -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-}
-
-.publication:hover {
-    background-color: var(--secondary60);
-}
-
-.pub-link {
-    text-decoration: none;
-    color: var(--text);
-}
-
-/* .pub-link:hover {
-    color: var(--accent);
-} */
-
 /* Project Page */
 
 .tools {
@@ -463,4 +452,8 @@ footer .social-icons span {
     color: var(--accent);
     text-decoration: underline;
     text-underline-offset: 4px;
+}
+
+.project-description a:hover {
+    text-underline-offset: 2px;
 }
