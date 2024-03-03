@@ -1,11 +1,3 @@
-:root {
-  --text: hsl(216, 85%, 8%);
-  --background: hsl(212, 87%, 97%);
-  --primary: hsl(213, 77%, 50%);
-  --secondary: hsl(257, 86%, 74%);
-  --accent: hsl(276, 87%, 61%);
-}
-
 /*   Start global   */
 
 * {
@@ -26,16 +18,14 @@
 
 
 #navbar {
-  /* height: 150px; */
-  /* overflow: hidden; */
   position: fixed;
-  /* height: 56px; */
   width:100%;
   top: 0;
   z-index: 100;
   background-color: var(--background);
 
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
@@ -64,7 +54,6 @@
   }
   .nav-links li {
     float: left;
-    /* padding: 13px 13px; */
     font-size: 18px;
     border-radius: 3px;
     transition: all 0.7s ease-in-out;
@@ -72,6 +61,8 @@
   }
   .nav-links li a {
     color: var(--primary);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
   }
   .nav-links li a:hover {
     color: var(--accent);
@@ -97,7 +88,7 @@
     -webkit-transition: all 0.2s ease-in-out;
   }
 
-  .hamburger:hover .bar{
+  .hamburger:hover .bar {
     background-color: var(--accent);
   }
 
@@ -114,14 +105,15 @@
       -webkit-transition: 0.4s;
     }
     .change .bar1 {
-    /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
-    transform: rotate(-45deg) translate(-6px, 8px);
+      transform: rotate(-45deg) translate(-6px, 8px);
+      -webkit-transform: rotate(-45deg) translate(-6px, 8px);
     }
-    .change .bar2 {opacity: 0;}
+    .change .bar2 {
+      opacity: 0;
+    }
     .change .bar3 {
-    -webkit-transform: rotate(45deg); 
-    /* translate(-8px, -8px); */
-    transform: rotate(45deg) translate(-6px, -8px);
+      transform: rotate(45deg) translate(-6px, -8px);
+      -webkit-transform: rotate(45deg) translate(-6px, -8px);
     }
     
   
@@ -129,7 +121,7 @@
   
   /*   Start media query   */
   
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     .nav-button {
       display: block;
     }
@@ -139,7 +131,6 @@
       margin: 0;
       padding: 0;
       position: relative;
-      /* background-color: var(--bk3); */
       display: none;
     }
     .nav-links li {
@@ -162,6 +153,8 @@
   font-size: 24px;
   font-weight: bolder;
   color: var(--primary);
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 
 .nav-title:hover {
