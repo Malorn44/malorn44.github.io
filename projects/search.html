@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Mara Schwartz</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../header.css" />
+    <script src="https://kit.fontawesome.com/620ea91625.js" crossorigin="anonymous"></script>
+    <script src="../jquery-3.7.0.min.js"></script>
+    <script src="../index.js"></script>
+</head>
+
+<body>
+    <header id="navbar">
+        <a class="nav-title" href="../index.html">Mara Schwartz</a>
+        <div class="nav-button">
+            <div class="hamburger toggle">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a class="toggle" href="../index.html#about">About</a></li>
+            <li><a class="toggle" href="../index.html#projects">Projects</a></li>
+            <li><a class="toggle" href="../Mara_Schwartz_Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </header>
+    <div class="content-wrapper">
+        <div class="flex-wrapper">
+            <div>
+                <div class="grid-center">
+                    <h1>Semantic Search Using Embeddings</h1>
+                    <div class="tools center ">
+                        <ul>
+                            <li><a href="https://pytorch.org/">PyTorch</a></li>
+                            <li><a href="https://sbert.net/">Sentence Transformers</a></li>
+                            <li><a href="https://www.nltk.org/">NLTK</a></li>
+                            <li><a href="https://lemminflect.readthedocs.io/en/latest/">LemmInflect</a></li>
+                            <li><a href="https://www.python.org/">Python</a></li>
+                            <li><a href="https://www.djangoproject.com/">Django</a></li>
+                            <li><a href="https://www.w3.org/TR/CSS/#css">CSS</a></li>
+                            <li><a href="https://html.spec.whatwg.org/">HTML</a></li>
+                            <li><a href="https://www.javascript.com/">Javascript</a></li>
+                            <li><a href="https://beautiful-soup-4.readthedocs.io/en/latest/">Beautiful Soup</a></li>
+                        </ul>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            This is a web app I created with Django that searches Wikipedia pages for Academy Award-winning films using both keyword search and semantic search. I will talk mainly on the Semantic Search component here but more information about both my keyword search and semantic search implementations can be found on my <a href="https://github.com/Malorn44/semantic-search">github repository</a>.
+                        </p>
+                        <p>
+                            Semantic Search uses a LLM to generate sentence embeddings and perform a cosine similarity with the query embedding. I used the Sentence Tranformers library along with the <b>multi-qa-mpnet-base-dot-v1</b> model from <a href="https://sbert.net/">sbert</a>. The model is 420mb and it takes roughly 6 minutes to generate the embeddings for ~1300 articles. This is without parallelizing the operations which can be done for larger search spaces. Since BERT has a context size of 512 tokens (where a token is roughly equal to 1 word), I chunked the text of each article into 512-word chunks with a 50-word overlap. The word overlap helps maintain context between chunks. I then performed mean pooling, using PyTorch, on the sentence embeddings. 
+                        </p>
+                        <p>
+                            Semantic Search offers a lot of improvements over Keyword Search, such as being able to search for meaning rather than just for keywords. Because of this, Semantic Search more often than not provides more relevant results. However, Semantic Search can perform poorly when tasked with searching for uncommon words or names. It can also perform worse with shorter queries. One solution to this is Hybrid Search. Hybrid Search (also called "Keyword-Aware Semantic Search") combines the scores of both methods to produce a hybrid score. Hybrid Search has been shown in research to perform better than what Keyword and Semantic Search can do alone. I have not implemented Hybrid Search in this current version but will likely implement it in the future. I will update this page (and my github) when I do so.
+                        </p>
+                    </div>
+                    <h1>Links</h1>
+                    <div class="project-links">
+                        <ul>
+                            <li><a href="https://github.com/Malorn44/semantic-search">Github</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <footer class="center">
+                <div class="social-icons">
+                    <a href="mailto:maraschwartz44@gmail.com" target="_blank">
+                        <span class="fa-regular fa-envelope"></span> 
+                    </a>
+                    <a href="https://github.com/Malorn44" target="_blank">
+                        <span class="fa-brands fa-github"></span> 
+                    </a>
+                    <a href="https://www.linkedin.com/in/mara-e-schwartz/" target="_blank">
+                        <span class="fa-brands fa-linkedin-in"></span>     
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html> 
