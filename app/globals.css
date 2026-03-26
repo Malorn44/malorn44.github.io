@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Smooth scrolling for same-page anchors; respects user preference */
+html {
+  scroll-padding-top: 4rem; /* height of your header (h-16) */
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* -------------------- */
+/* Light theme */
+/* -------------------- */
+:root {
+  --foreground: hsl(216, 85%, 8%);       /* main text */
+  --background: hsl(212, 87%, 97%);      /* page background */
+  --primary: hsl(213, 77%, 50%);         /* blue accent */
+  --secondary: hsl(257, 86%, 74%);       /* purple highlight / secondary accent */
+  --accent: hsl(276, 87%, 61%);          /* tertiary accent (hover/interactive) */
+  --muted: hsl(216, 15%, 50%);           /* secondary text / metadata */
+  --border: hsl(216, 15%, 85%);          /* subtle border */
+  --shadow: rgba(0,0,0,0.05);            /* light shadow */
+}
+
+/* -------------------- */
+/* Dark theme (controlled by next-themes via class) */
+/* -------------------- */
+.dark {
+  --foreground: hsl(216, 15%, 92%);      /* soft white text */
+  --background: hsl(216, 30%, 12%);      /* dark gray/blue background */
+  --primary: hsl(213, 77%, 60%);         /* slightly brighter blue */
+  --secondary: hsl(257, 86%, 60%);       /* muted purple highlight */
+  --accent: hsl(276, 87%, 70%);          /* tertiary accent brighter for dark */
+  --muted: hsl(216, 15%, 65%);           /* muted text for dark theme */
+  --border: hsl(216, 15%, 25%);          /* subtle dark border */
+  --shadow: rgba(0,0,0,0.5);             /* stronger shadow for dark */
+}
+
+/* Optional: map to Tailwind theme tokens */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+/* Global styles */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
