@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          personal_token: ${{ secrets.GithubPagesDeploy }}
+          personal_token: ${{ secrets.PAGES_DEPLOY }}
           external_repository: Malorn44/malorn44.github.io
           publish_branch: gh-pages
           publish_dir: ./out
