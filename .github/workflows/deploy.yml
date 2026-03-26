@@ -25,9 +25,9 @@ jobs:
         run: npm run build && npm run export
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v7
+        uses: peaceiris/actions-gh-pages@v6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
-          destination_branch: main
+          destination_branch: gh-pages
           repository: Malorn44/malorn44.github.io
