@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Mara Schwartz Portfolio",
     images: [
       {
-        url: "https://maraschwartz.com/images/profile.png",
+        url: "https://maraschwartz.com/images/profile-social.png",
         width: 1200,
         height: 630,
       },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mara Schwartz",
     description: "Portfolio",
-    images: ["https://maraschwartz.com/images/profile.png"],
+    images: ["https://maraschwartz.com/images/profile-social.png"],
   },
 }
 
