@@ -18,7 +18,28 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Mara Schwartz",
   description: "Portfolio",
-};
+  openGraph: {
+    title: "Mara Schwartz",
+    description: "Portfolio",
+    url: "https://malorn44.github.io", // your site URL
+    siteName: "Mara Schwartz Portfolio",
+    images: [
+      {
+        url: "https://malorn44.github.io/images/profile.png", // replace with your image
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mara Schwartz",
+    description: "Portfolio",
+    images: ["https://malorn44.github.io/images/profile.png"], // same image
+  },
+}
 
 export default function RootLayout({
   children,
