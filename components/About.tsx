@@ -7,7 +7,7 @@ export default function About() {
       <div className="flex flex-col items-center text-center px-4">
         <div className="w-64 h-64 sm:w-80 sm:h-80 relative mb-6">
           <Image
-            src="/images/profile.png"
+            src="/images/profile-social.png"
             alt="Profile"
             fill
             className="rounded-full object-cover shadow-lg"
@@ -15,10 +15,13 @@ export default function About() {
           />
         </div>
 
-        <p className="mt-3 max-w-lg text-base text-muted">
-          I am a Software Engineer with a passion for building impactful applications.
-          I have a M.S. in Computer Science with a focus in Natural Language Processing
-          from Rensselaer Polytechnic Institute.
+        <p className="max-w-xl text-2xl font-bold text-foreground">
+          Hi, I'm Mara! I build reliable, meaningful software.
+        </p>
+
+        <p className="mt-4 max-w-xl text-base text-muted leading-relaxed">
+          With a background in NLP and full-stack development, I enjoy solving complex problems
+          and turning them into practical solutions.
         </p>
 
         <div className="mt-4 flex items-center gap-4 text-base">

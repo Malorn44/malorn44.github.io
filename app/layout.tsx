@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mara Schwartz",
     description: "Portfolio",
-    url: "https://malorn44.github.io", // your site URL
+    url: "https://maraschwartz.com",
     siteName: "Mara Schwartz Portfolio",
     images: [
       {
-        url: "https://malorn44.github.io/images/profile.png", // replace with your image
+        url: "https://maraschwartz.com/images/profile.png",
         width: 1200,
         height: 630,
       },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mara Schwartz",
     description: "Portfolio",
-    images: ["https://malorn44.github.io/images/profile.png"], // same image
+    images: ["https://maraschwartz.com/images/profile.png"],
   },
 }
 
