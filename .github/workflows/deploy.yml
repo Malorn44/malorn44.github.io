@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main  # Or whichever branch you develop on
+      - main
 
 jobs:
   build-and-deploy:
@@ -27,7 +27,8 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.GithubPagesDeploy }}
+          external_repository: Malorn44/malorn44.github.io
+          publish_branch: gh-pages
           publish_dir: ./out
-          destination_branch: gh-pages
-          repository: Malorn44/malorn44.github.io
+          force_orphan: true   # ensures clean deploy
