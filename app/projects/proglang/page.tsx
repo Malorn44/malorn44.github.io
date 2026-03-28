@@ -4,7 +4,7 @@ import { ProjectPage } from '@/components/ProjectPage'
 export default function ProgLangPage() {
   return (
     <ProjectPage
-      title="Programming Languages Assignment #2 (Fall 2021)"
+      title="P2P File Sharing & Directory Service Assignment"
       technologies={[
         { name: 'Erlang', href: 'https://www.erlang.org/' },
         { name: 'Bash', href: 'https://www.gnu.org/software/bash/' },
