@@ -3,7 +3,7 @@ import { FileText, BookOpen, ChevronsDown } from 'lucide-react'
 
 export default function About() {
   return (
-    <section id="top" className="min-h-[calc(100vh-4rem)] flex items-center justify-center relative">
+    <section id="top" className="min-h-[calc(100dvh-4rem)] flex items-center justify-center relative">
       <div className="flex flex-col items-center text-center px-4">
         <div className="w-64 h-64 sm:w-80 sm:h-80 relative mb-6">
           <Image
