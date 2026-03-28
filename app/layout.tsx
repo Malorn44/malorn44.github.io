@@ -4,6 +4,7 @@ import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { ThemeToggle } from '@/components/ThemeToggle'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -82,6 +83,11 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+
+          {/* Theme toggle positioned inside the about area */}
+          <div className="fixed bottom-4 right-4 z-40">
+            <ThemeToggle />
+          </div>
         </ThemeProvider>
       </body>
     </html>
