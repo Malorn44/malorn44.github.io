@@ -49,6 +49,22 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+      (function() {
+        try {
+          const theme = localStorage.getItem('theme');
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else if (theme === 'light') {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (_) {}
+      })();
+            `,
+          }}
+        />
         {/* Remove default favicon */}
         <link rel="icon" href="data:," />
       </head>
