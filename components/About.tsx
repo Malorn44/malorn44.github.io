@@ -27,7 +27,11 @@ export default function About() {
         <div className="mt-4 flex items-center gap-4 text-base">
           <a
             href="/Mara_Schwartz_Resume.pdf"
-            className="inline-flex items-center gap-2 hover:underline underline-offset-4 hover:text-(--accent) transition-colors duration-150"
+            className="inline-flex items-center gap-2
+                       underline sm:no-underline sm:hover:underline
+                       underline-offset-4
+                       hover:text-(--accent)
+                       transition-colors duration-150"
           >
             <FileText size={16} />
             Resume
@@ -37,7 +41,11 @@ export default function About() {
             href="https://doi.org/10.54941/ahfe1003276"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 hover:underline underline-offset-4 hover:text-(--accent) transition-colors duration-150"
+            className="inline-flex items-center gap-2
+                       underline sm:no-underline sm:hover:underline
+                       underline-offset-4
+                       hover:text-(--accent)
+                       transition-colors duration-150"
           >
             <BookOpen size={16} />
             Publication

@@ -70,7 +70,11 @@ export function ProjectPage({
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-(--primary) hover:text-(--accent) transition text-sm wrap-break-word"
+                className="flex items-center gap-1
+                           text-(--primary)
+                           hover:text-(--accent)
+                           active:text-(--accent)
+                           transition text-sm wrap-break-words"
               >
                 <Icon className="w-5 h-5 shrink-0" />
                 <span>{link.label}</span>
